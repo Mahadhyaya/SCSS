@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
 }
+
 .nav {
   position: fixed;
   display: flex;
@@ -29,6 +30,10 @@
   .first-logo {
     font-weight: bold;
     cursor: pointer;
+    @include mobile {
+      font-size: .8em;
+      // padding: 0;
+    }
   }
   .links {
     width: -100%;
@@ -36,6 +41,13 @@
       text-decoration: none;
       color: black;
       padding: .5em;
+      @include mobile {
+        font-size: 15px;
+        font-weight: 900;
+        // padding: 0;
+        // line-height: 80%;
+        letter-spacing: normal;
+      }
       &:hover {       background-color: rgb(245, 238, 238);
         ;
       }
@@ -56,6 +68,7 @@
     background-position:70%;
     background-position-y: 35%;
   }
+  
   .text {
     z-index: 99;
     position: relative;
@@ -66,6 +79,9 @@
       // text-align: center;
       margin-left: 6em;
     }
+    @include mobile {
+      left:25%;
+    }
     .bold {
       // border: 2px solid red;
       background: rgb(75, 74, 73);
@@ -74,6 +90,10 @@
     }
     .lightit {
       font-size: 2em;
+      @include mobile {
+        font-weight: bold;
+        color: green;
+      }
     }
   }
 }
