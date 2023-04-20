@@ -1,0 +1,6 @@
+@mixin multis {
+  @media (min-width: 800px) {
+    @content;
+  }
+}
+

@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  z-index: 999;
+  background-color: white;
+  justify-content: space-between;
+  margin: 1em;
+  align-items: center;
+  letter-spacing: 0.2em;
+  font-size: 20px;
+  height: 1em;
+  padding: 1em;
+  width: 100%;
+  height: 2.5em;
+  margin: 0;
+}
+.nav .logo:hover {
+  padding: 0.3em;
+  background-color: rgb(245, 238, 238);
+}
+.nav .first-logo {
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav .links {
+  width: -100%;
+}
+.nav .links a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5em;
+}
+.nav .links a:hover {
+  background-color: rgb(245, 238, 238);
+}
+
+.hero {
+  letter-spacing: 0.2em;
+  position: relative;
+  background-image: url("../assets/architect.jpg");
+  height: 40vh;
+  background-repeat: no-repeat;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-position: 70%;
+  background-position-y: 35%;
+}
+@media (min-width: 800px) {
+  .hero {
+    background-position: 70%;
+    background-position-y: 35%;
+  }
+}
+.hero .text {
+  z-index: 99;
+  position: relative;
+  left: 35%;
+  top: 8em;
+  color: white;
+}
+@media (min-width: 800px) {
+  .hero .text {
+    margin-left: 6em;
+  }
+}
+.hero .text .bold {
+  background: rgb(75, 74, 73);
+  padding: 0.2em;
+  margin-right: 0.7em;
+}
+.hero .text .lightit {
+  font-size: 2em;
+}
+
+.center {
+  width: 90vw;
+  margin: 0 auto;
+}
+.center .sec1 {
+  margin-top: 4em;
+}
+.center .sec1 hr {
+  margin-top: 1em;
+  color: rgb(225, 232, 239);
+}
+.center .sec1 .mains {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+.center .sec1 .mains .imges {
+  position: relative;
+  margin: 0 auto;
+}
+.center .sec1 .mains .imges .image {
+  width: 40vw;
+}
+.center .sec1 .mains .imges .small-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  color: white;
+  padding: 1em;
+}
+.center .sec2 {
+  margin-top: 4em;
+}
+.center .sec2 hr {
+  margin-top: 1em;
+  color: rgb(225, 232, 239);
+}
+.center .sec2 .paras {
+  margin-bottom: 1em;
+}
+.center .sec2 .ceo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.center .sec2 .ceo .ce {
+  font-weight: bold;
+  margin: 5px;
+}
+.center .sec2 .ceo img {
+  align-items: center;
+  height: 10em;
+}
+.center .sec2 .ceo #contact {
+  margin-top: 1em;
+  width: 20vw;
+  background: blue;
+  color: white;
+  height: 3em;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 1em;
+  height: 3em;
+  background: black;
+}
+.footer p {
+  color: white;
+  text-align: center;
+  padding-top: 1em;
+}/*# sourceMappingURL=main.css.map */

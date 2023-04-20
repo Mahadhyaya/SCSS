@@ -1,0 +1,157 @@
+@import 'config';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  position: fixed;
+  display: flex;
+  z-index: 999;
+  background-color: white;
+  justify-content: space-between;
+  margin:1em;
+  align-items: center;
+  letter-spacing: .2em;
+  font-size: 20px;
+  height:1em ;
+  padding: 1em;
+  width: 100%;
+  height: 2.5em;
+  margin: 0;
+  .logo {
+    &:hover {
+      padding: 0.3em;
+      background-color: rgb(245, 238, 238);
+    }
+  }
+  .first-logo {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .links {
+    width: -100%;
+    a {
+      text-decoration: none;
+      color: black;
+      padding: .5em;
+      &:hover {       background-color: rgb(245, 238, 238);
+        ;
+      }
+    }
+  }
+}
+
+.hero {
+  letter-spacing: .2em;
+  position: relative;
+  background-image: url('../assets/architect.jpg');
+  height: 40vh;
+  background-repeat: no-repeat;
+  object-fit:contain;
+  background-position:70%;
+  background-position-y: 35%;
+  @include multis {
+    background-position:70%;
+    background-position-y: 35%;
+  }
+  .text {
+    z-index: 99;
+    position: relative;
+    left:35%;
+    top:8em;
+    color: white;
+    @include multis {
+      // text-align: center;
+      margin-left: 6em;
+    }
+    .bold {
+      // border: 2px solid red;
+      background: rgb(75, 74, 73);
+      padding: .2em;
+      margin-right: .7em;
+    }
+    .lightit {
+      font-size: 2em;
+    }
+  }
+}
+
+.center {
+  width: 90vw;
+  margin: 0 auto;
+  .sec1 {
+    margin-top: 4em;
+    hr {
+      margin-top:1em;
+      color:rgb(225, 232, 239);
+    }
+    .mains {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+      .imges {
+        position: relative;
+        margin: 0 auto;
+        .image {
+          width: 40vw;
+          // height: 80px;
+        }
+        .small-text {
+          position: absolute;
+          top:0;
+          left: 0;
+          background: black;
+          color:white;
+          padding: 1em;
+        }
+      }
+    }
+  }
+  .sec2 {
+    margin-top: 4em;
+    hr {
+      margin-top:1em;
+      color:rgb(225, 232, 239);
+    }
+    .paras {
+      margin-bottom: 1em;
+    }
+    .ceo { 
+      // margin: 0 auto;
+      // width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .ce {
+        font-weight: bold;
+        margin:5px;
+      }
+      img {
+        align-items: center;
+        height: 10em;
+      }
+      #contact {
+        margin-top: 1em;
+        width: 20vw;
+        background: blue;
+        color: white;
+        height: 3em;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top:1em;
+  height: 3em;
+  background: black;
+  p{
+    color:white;
+    text-align: center;
+    padding-top:1em;
+  }
+}
